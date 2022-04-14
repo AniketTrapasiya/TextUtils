@@ -1,16 +1,16 @@
 import './App.css';
-import Aboutus from './components/Aboutus';
+// import Aboutus from './components/Aboutus';
 import Navbar from './components/Navbar'
 import TextForm from './components/TextForm'
 import React, { useState } from 'react'
 import Alert from './components/Alert';
-import Signup from './components/Signup.js';
-import {
-  BrowserRouter as Router,
-  Routes, 
-  Route
-} from "react-router-dom";
-import Login from './Login';
+// import Signup from './components/Signup.js';
+// import {
+//   BrowserRouter as Router,
+//   Routes, 
+//   Route
+// } from "react-router-dom";
+// import Login from './Login';
 
 export default function App() {
   const [mode, setMode] = useState("light");
@@ -41,19 +41,21 @@ export default function App() {
   }
   return (
     <>
-    <Router>
+    {/* <Router> */}
       <Navbar title="Textutils" about='About' mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
 
       <div className="container">
-        <Routes>
-          <Route path="/"  element={<TextForm showAlert={showAlert} heading="Enter Text here" mode={mode} />} />
+          <TextForm showAlert={showAlert} heading="Enter Text here" mode={mode} />
+
+        {/* <Routes>
+          <Route path="/"  element={} />
           <Route path="/about" element={<Aboutus />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
-        </Routes>
+        </Routes> */}
       </div>
-      </Router>
+      {/* </Router> */}
     </>
 
   );
