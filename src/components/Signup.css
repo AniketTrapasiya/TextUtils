@@ -1,0 +1,34 @@
+body{
+    background-color: #F9FBFF;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  h1{
+      text-align: justify;
+      padding-left: 3%;
+  }
+ .btn{
+     color: white;
+     background-color: #ff4800;
+    }
+ .form{
+    color: #152c5b;
+    padding-left: 15px;
+ }
+ input[type="text"],
+ input[type="password"],
+input[type="email"],
+input[type="phone"] {
+    padding: 1px 0;
+    border: 0;
+    border-bottom: solid 1px #dddddd;
+    font-family: inherit;
+    font-size: inherit;
+    display: block;
+    margin: 15px;
+    width: 250px;
+  }
